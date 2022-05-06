@@ -1,0 +1,107 @@
+html{
+ font-size:62.5%;
+ box-sizing:border-box;
+}
+
+*, *::before, *::after{
+ box-sizing: inherit;
+}
+
+body{
+ margin: 0;
+ padding: 0;
+ line-height: 1.6;
+ font-family: 'Poppins', sans-serif;  
+}
+
+.promo{
+ padding-top:200px;
+ display: flex;
+ flex-direction:column;
+ justify-content:left;
+ align-items:left;
+ width:auto;
+ margin:auto;
+ position:relative;
+ z-index: 2;
+}
+
+.promo h2{
+ font-size: 3.5rem;
+ text-align:left;
+ color:white;
+ font-weight: 700;
+}
+
+.promo p{
+ font-size: 1.5rem;
+ text-align:left;
+ color:white;
+ font-weight:500;
+}
+
+button{
+ display: inline-block;
+ border:none;
+ height:40px;
+ border-radius:10px;
+ padding: 10px 0px;
+ width:110px;
+ background-color:white;
+ font-size: 1.1rem;
+ color:black;
+ font-weight: 800;
+ transition: 150ms;
+ margin-top: 15px;
+}
+
+button:focus{
+ outline:none;
+}
+
+button:hover{
+ transform:translate(0, -5px);
+}
+
+#hero{
+ min-height: 100vh;
+ position:relative;
+}
+ 
+video{
+ position:fixed;
+ right:0;
+ bottom:0;
+ min-width:auto;
+ min-height:auto;
+ width:auto;
+ height:auto;
+ z-index:-100;
+ background:url(viaja.mp4) no-repeat;
+ background-size:cover;
+}
+
+nav.footer li{
+ float:left;
+ list-style-type:none;
+ width:3%;
+ padding:40px;
+ position:left;
+ filter:invert(100%)
+}
+
+nav.text h1{
+ float:left;
+ color:white;
+ text-align:right;
+ width:13%;
+ padding:20px 5px;
+ position:left;
+}
+
+nav.menu img{
+ padding: 3%;
+ width: 10vw;   /*  10% del ancho de la pantalla (View-Width) */
+ height:auto;
+ float:right;
+}
